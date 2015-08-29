@@ -8,7 +8,7 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 URL:       https://github.com/StotinkaOS/bumblebee-ui
 Source0:   %{name}-%{version}.tar.gz
-Requires:  bumblebee pygtk
+Requires:  bumblebee pygtk2
 
 %description
 %{Summary}.
