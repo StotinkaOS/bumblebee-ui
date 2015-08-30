@@ -105,9 +105,9 @@ class BumblebeeIndicator():
         
     def state_checker(self):
       if os.path.exists(self.lock_file):
-        self.ind.set_from_file("bumblebee-indicator-active.svg")
+        self.ind.set_from_file(gtk.icon_theme_get_default().lookup_icon("bumblebee-indicator-active", 48, 0).get_filename())
       else:
-        self.ind.set_from_file("bumblebee-indicator.svg")
+        self.ind.set_from_file(gtk.icon_theme_get_default().lookup_icon("bumblebee-indicator", 48, 0).get_filename())
       gobject.timeout_add_seconds(5, self.state_checker)
 
 # MAIN LOOP LAUNCHING A STATE CHECK EVERY TWO SECONDS
