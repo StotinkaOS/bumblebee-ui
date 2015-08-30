@@ -1,7 +1,7 @@
 Summary:   Bumblebee Graphical User Interface
 Name:      bumblebee-ui
-Version:   1
-Release:   20150830.b1c8e72%{?dist}.sos
+Version:   2
+Release:   20150830.fe3f4ee%{?dist}.sos
 License:   GPL
 Group:     User Interface/Desktops
 BuildArch: noarch
@@ -68,6 +68,7 @@ fi
 * Wed Aug 30 2015 Ivaylo Kuzev <ivo@stotinkaos.net>
 - Update icon cache
 - Add Bumblebee indicator to the autostart applications
+- Correct get icon filenames, added new icons
 
 * Sat Aug 29 2015 Ivaylo Kuzev <ivo@stotinkaos.net> 
 - Initial .spec for StotinkaOS 
